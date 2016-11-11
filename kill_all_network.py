@@ -66,7 +66,7 @@ class Scan():
 
     def scan(self, ip):
         result = cm.getstatusoutput('ping "' + ip + '" -c 1 -b')
-        if(result[0] == 0 and ip != self.my_ip):
+        if(result[0] == 0 and ip != self.my_ip and ip != self.default_ip):
             print 'Found: ' + ip
             f = open(self.ips_file_path, 'a')
             f.write(ip + '\n')
