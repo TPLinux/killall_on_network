@@ -1,7 +1,7 @@
 # conding: utf-8
 
 # Codded by: @i127001
-# Twitter: https://twitter.com
+# Twitter: https://twitter.com/i127001
 # Requirements library: command, multiprocessing
 # Requirements packages: dsniff
 
@@ -25,7 +25,7 @@ class Scan():
             f.close()
             print('\n')
             print('# Codded by: @i127001')
-            print('# Twitter: https://twitter.com')
+            print('# Twitter: https://twitter.com/i127001')
             new_file = cm.getstatusoutput('echo "" > /root/Kj_test_YB34gnjcdvkndhb_temp_.txt')
             if('denied' in new_file[1].lower()):
                 print("\nYou must be a sudo or su\n")
