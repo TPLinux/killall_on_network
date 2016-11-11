@@ -12,7 +12,8 @@ commands, multiprocessing
 dsniff
 
 * Speed scanning with multiprocessing
-# Info
+
+# Info And Setting Up 
 
 just you need to setting up the default path of file will save IPs inside it 
 
