@@ -10,3 +10,5 @@ commands, multiprocessing
 
 # Requirements packages: 
 dsniff
+
+* Speed scanning with multiprocessing
