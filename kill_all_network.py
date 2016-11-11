@@ -12,7 +12,7 @@ import socket
 import os
 
 
-ips_file_path = '/home/i127001/.Trash/ips.txt'
+ips_file_path = '~/.killall_ips.txt'
 
 
 class Scan():
