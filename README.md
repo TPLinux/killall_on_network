@@ -6,7 +6,7 @@ Stop connection for all IPs on your network using arpspoof with turning off the 
 # Twitter: https://twitter.com
 
 # Requirements library:
-command, multiprocessing
+commands, multiprocessing
 
 # Requirements packages: 
 dsniff
