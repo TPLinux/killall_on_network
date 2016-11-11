@@ -3,7 +3,7 @@
 Stop connection for all IPs on your network using arpspoof with turning off the IPv4 forwarding 
 
 # Codded by: @i127001
-# Twitter: https://twitter.com
+# Twitter: https://twitter.com/i127001
 
 # Requirements library:
 commands, multiprocessing
