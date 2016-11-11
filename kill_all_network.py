@@ -59,8 +59,8 @@ class Scan():
                 self.ip_with_out_last_number = self.default_ip[:self.default_ip.find('.', 8) + 1]
                 self.my_ip_end = self.my_ip[self.default_ip.find('.', 8) + 1:]
                 self.end_default = self.default_ip[self.default_ip.find('.', 8) + 1:]
-        except Exception as e:
-            print(e)
+        except Exception as e:  # noqa
+            # print(e)
             cm.getstatusoutput('sudo killall arpspoof ')
             exit()
 
@@ -90,9 +90,13 @@ class Scan():
         ips.remove('')
         try:
             for ip in ips:
-                mp.Process(target=kill_ip, args=([ip])).start()
-        except Exception as e:
-            print(e)
+                try:
+                    mp.Process(target=kill_ip, args=([ip])).start()
+                except:
+                    cm.getstatusoutput('sudo killall arpspoof ')
+                    exit()
+        except Exception as e:  # noqa
+            # print(e)
             cm.getstatusoutput('sudo killall arpspoof ')
             exit()
 
@@ -102,8 +106,8 @@ try:
     print("Scanning...")
     scan.do_scan()
     op = raw_input()
-except Exception as e:
-    print(e)
+except Exception as e:  # noqa
+    # print(e)
     cm.getstatusoutput('sudo killall arpspoof ')
     exit()
 except KeyboardInterrupt:
